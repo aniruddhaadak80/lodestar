@@ -1,0 +1,3 @@
+[17320:18868:1009/194419.817:ERROR:chrome\browser\task_manager\providers\fallback_task_provider.cc:126] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/40528867.
+1503794 bytes written to file C:\Users\ANIRUDDHA\Desktop\Projects\lodestar\docs\item.png
+[17320:20948:1009/194419.997:ERROR:chrome\browser\edge_windows_user_activity\windows_user_activity_register.cc:726] hr failed: Invalid window handle. (0x80070578)

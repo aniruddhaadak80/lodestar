@@ -1,0 +1,48 @@
+import type { Person } from "./types";
+
+export const PEOPLE: Person[] = [
+  /* technical — alignment & control */
+  { id: "paul-christiano", name: "Paul Christiano", role: "Executive Director, Alignment Research Center", org: "ARC", known: "Co-invented RLHF; 'What failure looks like'; research on oversight and forecasting", site: "https://paulfchristiano.com/", blog: "https://paulfchristiano.com/ai", topics: ["alignment", "training", "risk"] },
+  { id: "eliezer-yudkowsky", name: "Eliezer Yudkowsky", role: "Founder, Machine Intelligence Research Institute", org: "MIRI", known: "Created the field of AI alignment; AGI ruin writings", site: "https://intelligence.org/", topics: ["alignment", "risk"] },
+  { id: "stuart-armstrong", name: "Stuart Armstrong", role: "Co-founder, Aligned AI", org: "Aligned AI", known: "Value extrapolation; co-author of Racing to the Precipice", site: "https://buildaligned.ai/about-us", blog: "https://www.alignmentforum.org/", topics: ["alignment"] },
+  { id: "neel-nanda", name: "Neel Nanda", role: "Lead, Mechanistic Interpretability", org: "Google DeepMind", known: "TransformerLens; 200 open problems in mech interp; live paper reviews", site: "https://www.neelnanda.io/", blog: "https://www.neelnanda.io/blog", video: "https://www.youtube.com/@neelnanda2469", topics: ["interp"] },
+  { id: "chris-olah", name: "Chris Olah", role: "Co-founder, Anthropic", org: "Anthropic", known: "Co-founded Distill; circuits, superposition, the vocabulary of interpretability", site: "https://colah.github.io/", blog: "https://transformer-circuits.pub/", topics: ["interp"] },
+  { id: "rohin-shah", name: "Rohin Shah", role: "Leads AGI Safety and Alignment", org: "Google DeepMind", known: "Alignment Newsletter; The False Promise of Neural Interpretability", site: "https://rohinshah.com/", topics: ["alignment", "interp"] },
+  { id: "buck-shlegeris", name: "Buck Shlegeris", role: "CEO, Redwood Research", org: "Redwood Research", known: "Co-introduced AI control; the case for ensuring powerful AIs are controlled", site: "https://shlegeris.com/", blog: "https://blog.redwoodresearch.org/", topics: ["control"] },
+  { id: "ryan-greenblatt", name: "Ryan Greenblatt", role: "Chief Scientist, Redwood Research", org: "Redwood Research", known: "AI Control; alignment faking; causal scrubbing", site: "https://rdwrs.com/team", blog: "https://redwoodresearch.substack.com/", topics: ["control"] },
+  { id: "marius-hobbhahn", name: "Marius Hobbhahn", role: "Co-founder and CEO", org: "Apollo Research", known: "A Starter Guide for Evals; in-context scheming; CoT monitorability", site: "https://www.mariushobbhahn.com/", blog: "https://www.apolloresearch.ai/", video: "https://www.youtube.com/@ApolloResearch", topics: ["evals", "control"] },
+  { id: "william-saunders", name: "William Saunders", role: "Alignment Science", org: "Anthropic", known: "AI-written critiques; causal scrubbing", topics: ["alignment", "interp"] },
+  { id: "geoffrey-irving", name: "Geoffrey Irving", role: "Co-founder and chief scientist", org: "Resolution", known: "Co-created RLHF and AI safety via debate", site: "https://resolution.org/about", topics: ["alignment", "training"] },
+  { id: "daniel-murfet", name: "Daniel Murfet", role: "Co-founder", org: "Resolution", known: "Singular learning theory applied to alignment", site: "https://resolution.org/about", topics: ["alignment"] },
+  { id: "trenton-bricken", name: "Trenton Bricken", role: "Researcher", org: "Anthropic", known: "Towards monosemanticity; sparse autoencoder scaling", blog: "https://transformer-circuits.pub/", topics: ["interp"] },
+  { id: "atticus-geiger", name: "Atticus Geiger", role: "Researcher", org: "Anthropic", known: "Causal abstraction; state of interpretability", topics: ["interp"] },
+
+  /* evals, forecasting, measurement */
+  { id: "beth-barnes", name: "Beth Barnes", role: "Founder and CEO", org: "METR", known: "The task completion time horizon curve", site: "https://metr.org/team/beth-barnes", blog: "https://metr.org/blog/", topics: ["evals"] },
+  { id: "ajeya-cotra", name: "Ajeya Cotra", role: "Technical staff", org: "METR", known: "The biology anchor timeline method; forecasting", site: "https://metr.org/team/ajeya-cotra/", blog: "https://acotra.substack.com/", topics: ["evals", "risk"] },
+  { id: "hjalmar-wijk", name: "Hjalmar Wijk", role: "Chief scientist", org: "METR", known: "Capability evals; incident reports", site: "https://metr.org/about", topics: ["evals"] },
+  { id: "dan-hendrycks", name: "Dan Hendrycks", role: "Executive Director", org: "Center for AI Safety", known: "GELU, MMLU, Humanity's Last Exam", site: "https://danhendrycks.com/", blog: "https://safe.ai/blog/devising-ml-metrics", topics: ["evals", "risk"] },
+  { id: "jacob-steinhardt", name: "Jacob Steinhardt", role: "Professor, UC Berkeley; Founder, Transluce", org: "Berkeley", known: "MMLU co-author; Unsolved Problems in ML Safety; forecasting", site: "https://jsteinhardt.stat.berkeley.edu/", topics: ["evals", "risk"] },
+  { id: "leopold-aschenbrenner", name: "Leopold Aschenbrenner", role: "Independent researcher, ex-OpenAI", org: "Situational Awareness", known: "The 2024 Situational Awareness thesis", site: "https://situational-awareness.ai/", topics: ["risk"] },
+  { id: "daniel-kokotajlo", name: "Daniel Kokotajlo", role: "Independent, ex-OpenAI", org: "AI 2027", known: "Co-author of AI 2027; takeoff model updates", site: "https://ai-2027.com/", blog: "https://www.lesswrong.com/users/DanielKokotajlo", topics: ["risk", "gov"] },
+  { id: "holden-karnofsky", name: "Holden Karnofsky", role: "Anthropic; co-founder of ARC", org: "Cold Takes", known: "Most Important Century; ARC Evals and ARC-AGI", site: "https://cold-takes.com/", topics: ["risk", "evals"] },
+  { id: "owain-evans", name: "Owain Evans", role: "Director, Truthful AI", org: "Truthful AI / CHAI", known: "TruthfulQA, the reversal curse, emergent misalignment", site: "https://owainevans.github.io/", topics: ["evals", "training"] },
+  { id: "richard-ngo", name: "Richard Ngo", role: "Independent researcher, ex-DeepMind and OpenAI", org: "Mind the Future", known: "Alignment Fundamentals curriculum; Alignment course author", site: "https://www.richardcngo.com/", blog: "https://www.mindthefuture.info/", topics: ["alignment", "gov"] },
+
+  /* governance, rights, critique */
+  { id: "timnit-gebru", name: "Timnit Gebru", role: "Founder and executive director", org: "DAIR Institute", known: "Stochastic Parrots; Gender Shades", site: "https://dair-institute.org/team/timnit-gebru", topics: ["society", "gov"] },
+  { id: "abeba-birhane", name: "Abeba Birhane", role: "Founder, AI Accountability Lab, Trinity College Dublin", org: "AI Accountability Lab", known: "The values encoded in machine learning research", site: "https://abebabirhane.com/", topics: ["society"] },
+  { id: "kate-crawford", name: "Kate Crawford", role: "Professor, USC Annenberg", org: "AI Now Institute", known: "Atlas of AI; co-founder of AI Now Institute", site: "https://www.katecrawford.net/", topics: ["society", "gov"] },
+  { id: "ruha-benjamin", name: "Ruha Benjamin", role: "Professor, Princeton", org: "Princeton", known: "Race After Technology; Ida B. Wells JUST Data Lab", site: "https://www.ruhabenjamin.com/", topics: ["society"] },
+  { id: "meredith-broussard", name: "Meredith Broussard", role: "Professor, NYU Carter Journalism Institute", org: "NYU", known: "More Than a Glitch; Artificial Unintelligence", site: "https://meredithbroussard.com/", topics: ["society"] },
+  { id: "gary-marcus", name: "Gary Marcus", role: "Professor emeritus, NYU; public critic", org: "Marcus on AI", known: "Rebooting AI; the loudest skeptic voice in AI", site: "http://www.garymarcus.com/", blog: "http://garymarcus.substack.com/", topics: ["society", "evals"] },
+  { id: "sneha-revanur", name: "Sneha Revanur", role: "Founder and president", org: "Encode AI", known: "Founded Encode at 16; wrote CA SB 53 and NY RAISE Act", site: "https://sneharevanur.com/", blog: "https://encodeai.org/press", topics: ["gov"] },
+  { id: "mantas-mazeika", name: "Mantas Mazeika", role: "Research scientist", org: "Center for AI Safety", known: "Lead author of HarmBench; MMLU co-author", topics: ["evals", "risk"] },
+
+  /* communicators */
+  { id: "rob-miles", name: "Rob Miles", role: "Founder", org: "AI Safety Info", known: "The clearest plain-language explainer in the field", site: "https://aisafety.info/", blog: "https://www.lesswrong.com/users/robert-miles", topics: ["alignment", "risk"] },
+  { id: "jack-clark", name: "Jack Clark", role: "Co-founder and head of policy", org: "Anthropic", known: "Import AI — the most-read AI research newsletter by practitioners", site: "https://jack-clark.net/", blog: "https://jack-clark.net/feed", topics: ["gov", "risk"] },
+  { id: "nathan-lambert", name: "Nathan Lambert", role: "Founder", org: "Interconnects", known: "Interconnects; the RLHF book; Zephyr and RewardBench", site: "https://natolambert.com/", blog: "https://www.interconnects.ai/", topics: ["training", "gov"] },
+  { id: "simon-willison", name: "Simon Willison", role: "Independent; Datasette creator", org: "Simon Willison's Weblog", known: "Coined prompt injection; tracks the lethal trifecta", site: "https://simonwillison.net/", blog: "https://simonwillison.net/", topics: ["misconduct"] },
+  { id: "melanie-mitchell", name: "Melanie Mitchell", role: "Professor, Santa Fe Institute", org: "Santa Fe Institute", known: "AI: A Guide for Thinking Humans; abstraction and analogy", site: "https://melaniemitchell.me/", blog: "https://aiguide.substack.com/", topics: ["society", "evals"] },
+];
