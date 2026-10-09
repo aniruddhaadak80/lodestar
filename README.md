@@ -8,6 +8,8 @@ Every paper, essay, talk, podcast and course that matters — searchable, struct
 area, annotated with *why it matters*, and backed by reading paths you can actually finish.
 Local-first: no login, no tracking, nothing leaves your browser.
 
+**→ Live: [lodestar-phi.vercel.app](https://lodestar-phi.vercel.app)**
+
 [![license](https://img.shields.io/github/license/aniruddhaadak80/lodestar?style=flat-square)](LICENSE)
 [![next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org)
 [![typescript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
