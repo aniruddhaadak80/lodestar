@@ -18,7 +18,7 @@ export const PATHS: Path[] = [
       { week: 7, itemId: "eighty-k", note: "One long episode on METR or Apollo. Read the transcript instead if pressed for time." },
       { week: 8, itemId: "situational-awareness", note: "All of it, if you can. The most argued version of the fast timelines position." },
       { week: 9, itemId: "ai-2027", note: "A dated, falsifiable scenario — disagree with it precisely rather than vaguely." },
-      { week: 10, itemId: "stochastic-parrots", note: "The governance half: read the critique the field still has not answered." },
+      { week: 10, itemId: "foundation-models", note: "The governance half: read the critique the field still has not answered." },
       { week: 11, itemId: "alignment-faking", note: "The strongest empirical evidence for situational misalignment to date." },
       { week: 12, itemId: "aisafety-info", note: "Write your own two page summary and publish it publicly. Explaining a field badly is the fastest way to find out what you don't understand." },
     ],
