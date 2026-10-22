@@ -32,8 +32,20 @@ export function fmtMinutes(m: number) {
   return rest ? `${h}h ${rest}m` : `${h}h`;
 }
 
+/**
+ * The reader's own calendar date, as YYYY-MM-DD.
+ *
+ * Deliberately local rather than UTC: `toISOString()` would file the
+ * early hours of a day in Asia/Kolkata (or anywhere east of UTC) under
+ * the previous date, so one calendar day could be recorded as two and
+ * the streak would over-count. streakOf() walks the calendar with local
+ * date arithmetic, so the key has to be local too.
+ */
 export function todayISO(d = new Date()) {
-  return d.toISOString().slice(0, 10);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 
 export function streakOf(days: string[]) {
