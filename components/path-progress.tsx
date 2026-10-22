@@ -5,14 +5,17 @@ import { cn } from "@/lib/utils";
 
 export function PathProgress({ ids, compact }: { ids: string[]; compact?: boolean }) {
   const shelf = useShelf();
-  const done = ids.filter((id) => shelf.read.includes(id)).length;
-  const pct = ids.length ? Math.round((done / ids.length) * 100) : 0;
+  // Count distinct readings: a path must never report 100% because the same
+  // item appears in two of its steps.
+  const unique = [...new Set(ids)];
+  const done = unique.filter((id) => shelf.read.includes(id)).length;
+  const pct = unique.length ? Math.round((done / unique.length) * 100) : 0;
 
   if (compact) {
     if (done === 0) return <span className="font-mono text-[0.6rem] text-faint">todo</span>;
     return (
-      <span className={cn("font-mono text-[0.6rem]", done === ids.length ? "text-ok" : "text-accent")}>
-        {done === ids.length ? "✓ done" : `${done} step${done === 1 ? "" : "s"}`}
+      <span className={cn("font-mono text-[0.6rem]", done === unique.length ? "text-ok" : "text-accent")}>
+        {done === unique.length ? "✓ done" : `${done} step${done === 1 ? "" : "s"}`}
       </span>
     );
   }
@@ -22,7 +25,7 @@ export function PathProgress({ ids, compact }: { ids: string[]; compact?: boolea
       <div className="mb-1.5 flex items-baseline justify-between font-mono text-[0.64rem]">
         <span className="text-faint">progress</span>
         <span className="text-ink">
-          {done}/{ids.length} · {pct}%
+          {done}/{unique.length} · {pct}%
         </span>
       </div>
       <div className="progress-track">
