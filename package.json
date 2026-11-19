@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Lodestar — a reading room for AI safety: papers, essays, videos, courses, people and learning paths in one local-first app.",
+  "description": "Lodestar \u2014 a reading room for AI safety: papers, essays, videos, courses, people and learning paths in one local-first app.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -30,6 +30,6 @@
     "@types/react-dom": "^19.1.0",
     "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
-    "vitest": "^3"
+    "vitest": "^4.1.11"
   }
 }
